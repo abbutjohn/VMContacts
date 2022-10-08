@@ -20,6 +20,15 @@
 		F1C091E628F1956C00E95B24 /* VmRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091E328F1956C00E95B24 /* VmRoomsViewController.swift */; };
 		F1C091E728F1956C00E95B24 /* VmRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091E428F1956C00E95B24 /* VmRoomTableViewCell.swift */; };
 		F1C091E928F1959600E95B24 /* VmRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091E828F1959600E95B24 /* VmRoom.swift */; };
+		F1C091F128F1964900E95B24 /* VmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F028F1964900E95B24 /* VmContact.swift */; };
+		F1C091F428F1965A00E95B24 /* VmContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */; };
+		F1C091F528F1965A00E95B24 /* VmContatDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */; };
+		F1C091FB28F1967A00E95B24 /* VmContatcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */; };
+		F1C091FC28F1967A00E95B24 /* VmContactImageTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */; };
+		F1C091FD28F1967A00E95B24 /* VmContactLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */; };
+		F1C091FE28F1967A00E95B24 /* VmContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */; };
+		F1C091FF28F1967A00E95B24 /* VmContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */; };
+		F1C0920128F196BE00E95B24 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0920028F196BE00E95B24 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +60,15 @@
 		F1C091E328F1956C00E95B24 /* VmRoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoomsViewController.swift; sourceTree = "<group>"; };
 		F1C091E428F1956C00E95B24 /* VmRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoomTableViewCell.swift; sourceTree = "<group>"; };
 		F1C091E828F1959600E95B24 /* VmRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoom.swift; sourceTree = "<group>"; };
+		F1C091F028F1964900E95B24 /* VmContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContact.swift; sourceTree = "<group>"; };
+		F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactsViewModel.swift; sourceTree = "<group>"; };
+		F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatDetailsViewModel.swift; sourceTree = "<group>"; };
+		F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatcTableViewCell.swift; sourceTree = "<group>"; };
+		F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactImageTableviewCell.swift; sourceTree = "<group>"; };
+		F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactLabelTableViewCell.swift; sourceTree = "<group>"; };
+		F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactsViewController.swift; sourceTree = "<group>"; };
+		F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactDetailsViewController.swift; sourceTree = "<group>"; };
+		F1C0920028F196BE00E95B24 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 		F1C091DE28F194F600E95B24 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				F1C0920028F196BE00E95B24 /* Extentions.swift */,
 				F1C091D528F191D200E95B24 /* Main.storyboard */,
 				F1C091CF28F1903700E95B24 /* LaunchScreen.storyboard */,
 				F1C0918728F0E12500E95B24 /* AppDelegate.swift */,
@@ -134,7 +153,9 @@
 		F1C091E128F1951F00E95B24 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				F1C091D328F1906B00E95B24 /* Contacts.storyboard */,
+				F1C091EF28F1961500E95B24 /* View */,
+				F1C091EE28F1960E00E95B24 /* ViewModel */,
+				F1C091ED28F1960300E95B24 /* Model */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -158,11 +179,73 @@
 		F1C091EC28F195BD00E95B24 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F1C091D728F1920F00E95B24 /* Rooms.storyboard */,
-				F1C091E328F1956C00E95B24 /* VmRoomsViewController.swift */,
-				F1C091E428F1956C00E95B24 /* VmRoomTableViewCell.swift */,
+				F1C0920528F1972200E95B24 /* Views */,
+				F1C0920428F1971700E95B24 /* SubViews */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F1C091ED28F1960300E95B24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091F028F1964900E95B24 /* VmContact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1C091EE28F1960E00E95B24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */,
+				F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1C091EF28F1961500E95B24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1C0920328F196F500E95B24 /* Views */,
+				F1C0920228F196EA00E95B24 /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1C0920228F196EA00E95B24 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */,
+				F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */,
+				F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */,
+				F1C091D328F1906B00E95B24 /* Contacts.storyboard */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F1C0920328F196F500E95B24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */,
+				F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1C0920428F1971700E95B24 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091E428F1956C00E95B24 /* VmRoomTableViewCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F1C0920528F1972200E95B24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1C091D728F1920F00E95B24 /* Rooms.storyboard */,
+				F1C091E328F1956C00E95B24 /* VmRoomsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,11 +323,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C091E628F1956C00E95B24 /* VmRoomsViewController.swift in Sources */,
+				F1C091FB28F1967A00E95B24 /* VmContatcTableViewCell.swift in Sources */,
+				F1C0920128F196BE00E95B24 /* Extentions.swift in Sources */,
 				F1C091E928F1959600E95B24 /* VmRoom.swift in Sources */,
+				F1C091F428F1965A00E95B24 /* VmContactsViewModel.swift in Sources */,
+				F1C091F128F1964900E95B24 /* VmContact.swift in Sources */,
 				F1C0918828F0E12500E95B24 /* AppDelegate.swift in Sources */,
+				F1C091FD28F1967A00E95B24 /* VmContactLabelTableViewCell.swift in Sources */,
+				F1C091FC28F1967A00E95B24 /* VmContactImageTableviewCell.swift in Sources */,
+				F1C091F528F1965A00E95B24 /* VmContatDetailsViewModel.swift in Sources */,
+				F1C091FF28F1967A00E95B24 /* VmContactDetailsViewController.swift in Sources */,
 				F1C091E528F1956C00E95B24 /* VmAvailableRoomViewModel.swift in Sources */,
 				F1C091E728F1956C00E95B24 /* VmRoomTableViewCell.swift in Sources */,
 				F1C0918A28F0E12500E95B24 /* SceneDelegate.swift in Sources */,
+				F1C091FE28F1967A00E95B24 /* VmContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
