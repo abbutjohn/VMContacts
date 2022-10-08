@@ -79,10 +79,10 @@
 		F1C091A728F0E4B800E95B24 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */,
 				F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */,
 				F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */,
 				F1C091C728F18FAF00E95B24 /* NetworkServices.swift */,
-				F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */,
 				F1C091A828F0E4B800E95B24 /* NetworkLayer.h */,
 				F1C091A928F0E4B800E95B24 /* NetworkLayer.docc */,
 			);

@@ -22,7 +22,7 @@
 		F1C091E928F1959600E95B24 /* VmRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091E828F1959600E95B24 /* VmRoom.swift */; };
 		F1C091F128F1964900E95B24 /* VmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F028F1964900E95B24 /* VmContact.swift */; };
 		F1C091F428F1965A00E95B24 /* VmContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */; };
-		F1C091F528F1965A00E95B24 /* VmContatDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */; };
+		F1C091F528F1965A00E95B24 /* VmContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F328F1965A00E95B24 /* VmContactDetailsViewModel.swift */; };
 		F1C091FB28F1967A00E95B24 /* VmContatcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */; };
 		F1C091FC28F1967A00E95B24 /* VmContactImageTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */; };
 		F1C091FD28F1967A00E95B24 /* VmContactLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */; };
@@ -62,7 +62,7 @@
 		F1C091E828F1959600E95B24 /* VmRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoom.swift; sourceTree = "<group>"; };
 		F1C091F028F1964900E95B24 /* VmContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContact.swift; sourceTree = "<group>"; };
 		F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactsViewModel.swift; sourceTree = "<group>"; };
-		F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatDetailsViewModel.swift; sourceTree = "<group>"; };
+		F1C091F328F1965A00E95B24 /* VmContactDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactDetailsViewModel.swift; sourceTree = "<group>"; };
 		F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatcTableViewCell.swift; sourceTree = "<group>"; };
 		F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactImageTableviewCell.swift; sourceTree = "<group>"; };
 		F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactLabelTableViewCell.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C091F228F1965A00E95B24 /* VmContactsViewModel.swift */,
-				F1C091F328F1965A00E95B24 /* VmContatDetailsViewModel.swift */,
+				F1C091F328F1965A00E95B24 /* VmContactDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,8 +225,8 @@
 		F1C0920328F196F500E95B24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */,
 				F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */,
+				F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 				F1C0918828F0E12500E95B24 /* AppDelegate.swift in Sources */,
 				F1C091FD28F1967A00E95B24 /* VmContactLabelTableViewCell.swift in Sources */,
 				F1C091FC28F1967A00E95B24 /* VmContactImageTableviewCell.swift in Sources */,
-				F1C091F528F1965A00E95B24 /* VmContatDetailsViewModel.swift in Sources */,
+				F1C091F528F1965A00E95B24 /* VmContactDetailsViewModel.swift in Sources */,
 				F1C091FF28F1967A00E95B24 /* VmContactDetailsViewController.swift in Sources */,
 				F1C091E528F1956C00E95B24 /* VmAvailableRoomViewModel.swift in Sources */,
 				F1C091E728F1956C00E95B24 /* VmRoomTableViewCell.swift in Sources */,
