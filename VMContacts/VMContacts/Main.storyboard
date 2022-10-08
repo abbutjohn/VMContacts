@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h4Y-UI-tWE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides isEnabled="YES"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rooms-->
+        <scene sceneID="c2n-Tx-a1v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rooms" id="QZs-0y-r6K" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Np2-Cf-hAI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCw-dw-SHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="830"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="vvf-6Z-Y0z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contacts" id="Nog-er-4cM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FIy-DW-7s4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8T-0U-4B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469" y="98"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wn2-Q6-0k3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h4Y-UI-tWE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pLs-cF-xeM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xeW-a4-b7S" kind="relationship" relationship="viewControllers" id="k0z-Uv-h4y"/>
+                        <segue destination="Yqv-X8-1Mp" kind="relationship" relationship="viewControllers" id="aGb-aO-c3F"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtN-mR-aox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="92"/>
+        </scene>
+        <!--Peoples-->
+        <scene sceneID="tPi-Ab-5gV">
+            <objects>
+                <navigationController title="Peoples" automaticallyAdjustsScrollViewInsets="NO" id="xeW-a4-b7S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="UL6-bn-sFX">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath=" accessibilityIdentifier" value="people_Tab"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDR-rY-WfF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nog-er-4cM" kind="relationship" relationship="rootViewController" id="9O7-Zc-GEG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2l-Cp-WIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="92"/>
+        </scene>
+        <!--Rooms-->
+        <scene sceneID="qwb-3I-RSH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yqv-X8-1Mp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rooms" image="room" selectedImage="room" id="1Eh-KK-aC2">
+                        <imageReference key="largeContentSizeImage" image="room" symbolScale="large"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath=" accessibilityIdentifier" value="rooms_Tab"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E4Q-BI-LrI">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QZs-0y-r6K" kind="relationship" relationship="rootViewController" id="Coz-zf-eGE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9a-YA-9SG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="830"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="room" width="24" height="24"/>
+    </resources>
+</document>
