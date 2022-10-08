@@ -11,6 +11,10 @@
 		F1C091B028F0E4B800E95B24 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C091A528F0E4B800E95B24 /* NetworkLayer.framework */; };
 		F1C091B528F0E4B800E95B24 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091B428F0E4B800E95B24 /* NetworkLayerTests.swift */; };
 		F1C091B628F0E4B800E95B24 /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C091A828F0E4B800E95B24 /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C091CB28F18FAF00E95B24 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091C728F18FAF00E95B24 /* NetworkServices.swift */; };
+		F1C091CC28F18FAF00E95B24 /* ContactsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */; };
+		F1C091CD28F18FAF00E95B24 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */; };
+		F1C091CE28F18FAF00E95B24 /* RoomsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		F1C091A928F0E4B800E95B24 /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
 		F1C091AF28F0E4B800E95B24 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C091B428F0E4B800E95B24 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		F1C091C728F18FAF00E95B24 /* NetworkServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsLoader.swift; sourceTree = "<group>"; };
+		F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		F1C091A728F0E4B800E95B24 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */,
+				F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */,
+				F1C091C728F18FAF00E95B24 /* NetworkServices.swift */,
+				F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */,
 				F1C091A828F0E4B800E95B24 /* NetworkLayer.h */,
 				F1C091A928F0E4B800E95B24 /* NetworkLayer.docc */,
 			);
@@ -194,7 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C091CB28F18FAF00E95B24 /* NetworkServices.swift in Sources */,
+				F1C091CD28F18FAF00E95B24 /* NetworkRouter.swift in Sources */,
 				F1C091AA28F0E4B800E95B24 /* NetworkLayer.docc in Sources */,
+				F1C091CE28F18FAF00E95B24 /* RoomsLoader.swift in Sources */,
+				F1C091CC28F18FAF00E95B24 /* ContactsLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +420,7 @@
 		F1C091BD28F0E4B800E95B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RNG378K7ZX;
@@ -420,6 +437,7 @@
 		F1C091BE28F0E4B800E95B24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RNG378K7ZX;
