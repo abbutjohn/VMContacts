@@ -14,7 +14,7 @@ public protocol RoomsProtocol {
 }
 
 
-public class RoomsController: RoomsProtocol {
+public class RoomsLoader: RoomsProtocol {
     
     private let networkService : NetworkServices
     

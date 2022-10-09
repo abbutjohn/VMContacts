@@ -15,12 +15,14 @@ class VmAvailableRoomViewModel  {
             self.loadData()
         }
     }
+    var filterStatus : Bool = false
+    private var allRooms: [VmRoom] = []
     var loadData : (() -> ()) = {}
     var hideActivityIndicator : (() -> ()) = {}
     private var apiService : RoomsProtocol
 
     
-    init(apiService : RoomsProtocol =  RoomsController()) {
+    init(apiService : RoomsProtocol =  RoomsLoader()) {
         self.apiService =  apiService
         self.callFuncToGetBooksData()
     }
@@ -30,7 +32,8 @@ class VmAvailableRoomViewModel  {
         self.apiService.getRooms { (result: Result<[VmRoom], Error>) in
             switch result {
             case .success(let resultValue):
-                self.rooms = resultValue
+                self.allRooms = resultValue
+                self.filterOccupied(filter: false)
                 self.hideActivityIndicator()
             case .failure(let error):
                 print(error.localizedDescription)
@@ -42,6 +45,18 @@ class VmAvailableRoomViewModel  {
     func getRowsInSection() -> Int{
         
         return 4
+    }
+    
+    func filterOccupied(filter : Bool) {
+        
+        if filter {
+            
+            rooms = allRooms.filter { $0.isOccupied == false }
+        }
+        else{
+            rooms = allRooms
+
+        }
     }
     
     func getNameAndValue(room : VmRoom, indexPath : IndexPath) -> (String, String) {

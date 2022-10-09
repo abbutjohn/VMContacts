@@ -29,7 +29,19 @@
 		F1C091FE28F1967A00E95B24 /* VmContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */; };
 		F1C091FF28F1967A00E95B24 /* VmContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */; };
 		F1C0920128F196BE00E95B24 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0920028F196BE00E95B24 /* Extentions.swift */; };
+		F1C0921528F1A35F00E95B24 /* VmRoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */; };
+		F1C0921628F1A35F00E95B24 /* VmContatcsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1C0920E28F1A34200E95B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1C0917C28F0E12500E95B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C0918328F0E12500E95B24;
+			remoteInfo = VMContacts;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F1C091DD28F194E500E95B24 /* Embed Frameworks */ = {
@@ -69,6 +81,9 @@
 		F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactsViewController.swift; sourceTree = "<group>"; };
 		F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactDetailsViewController.swift; sourceTree = "<group>"; };
 		F1C0920028F196BE00E95B24 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoomsTests.swift; sourceTree = "<group>"; };
+		F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatcsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1C0920728F1A34200E95B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C0918628F0E12500E95B24 /* VMContacts */,
+				F1C0920B28F1A34200E95B24 /* VMContactsTests */,
 				F1C0918528F0E12500E95B24 /* Products */,
 				F1C091D928F194E500E95B24 /* Frameworks */,
 			);
@@ -96,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C0918428F0E12500E95B24 /* VMContacts.app */,
+				F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,7 +241,6 @@
 				F1C091F728F1967A00E95B24 /* VmContactImageTableviewCell.swift */,
 				F1C091F828F1967A00E95B24 /* VmContactLabelTableViewCell.swift */,
 				F1C091F628F1967A00E95B24 /* VmContatcTableViewCell.swift */,
-				F1C091D328F1906B00E95B24 /* Contacts.storyboard */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -225,6 +248,7 @@
 		F1C0920328F196F500E95B24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1C091D328F1906B00E95B24 /* Contacts.storyboard */,
 				F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */,
 				F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */,
 			);
@@ -248,6 +272,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F1C0920B28F1A34200E95B24 /* VMContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */,
+				F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */,
+			);
+			path = VMContactsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +302,24 @@
 			productReference = F1C0918428F0E12500E95B24 /* VMContacts.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F1C0920928F1A34200E95B24 /* VMContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1C0921228F1A34200E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */;
+			buildPhases = (
+				F1C0920628F1A34200E95B24 /* Sources */,
+				F1C0920728F1A34200E95B24 /* Frameworks */,
+				F1C0920828F1A34200E95B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1C0920F28F1A34200E95B24 /* PBXTargetDependency */,
+			);
+			name = VMContactsTests;
+			productName = VMContactsTests;
+			productReference = F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +332,10 @@
 				TargetAttributes = {
 					F1C0918328F0E12500E95B24 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					F1C0920928F1A34200E95B24 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F1C0918328F0E12500E95B24;
 					};
 				};
 			};
@@ -298,6 +353,7 @@
 			projectRoot = "";
 			targets = (
 				F1C0918328F0E12500E95B24 /* VMContacts */,
+				F1C0920928F1A34200E95B24 /* VMContactsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +368,13 @@
 				F1C091D828F1920F00E95B24 /* Rooms.storyboard in Resources */,
 				F1C091D128F1903700E95B24 /* LaunchScreen.storyboard in Resources */,
 				F1C091D628F191D200E95B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C0920828F1A34200E95B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +403,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1C0920628F1A34200E95B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C0921528F1A35F00E95B24 /* VmRoomsTests.swift in Sources */,
+				F1C0921628F1A35F00E95B24 /* VmContatcsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1C0920F28F1A34200E95B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1C0918328F0E12500E95B24 /* VMContacts */;
+			targetProxy = F1C0920E28F1A34200E95B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F1C0919628F0E12600E95B24 /* Debug */ = {
@@ -519,6 +599,42 @@
 			};
 			name = Release;
 		};
+		F1C0921028F1A34200E95B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNG378K7ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.VMContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VMContacts";
+			};
+			name = Debug;
+		};
+		F1C0921128F1A34200E95B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNG378K7ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.VMContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VMContacts";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +652,15 @@
 			buildConfigurations = (
 				F1C0919928F0E12600E95B24 /* Debug */,
 				F1C0919A28F0E12600E95B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1C0921228F1A34200E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C0921028F1A34200E95B24 /* Debug */,
+				F1C0921128F1A34200E95B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

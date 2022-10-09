@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDS-fw-NBB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDS-fw-NBB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,24 +12,24 @@
         <!--Vm Contacts View Controller-->
         <scene sceneID="9pq-Kg-VeY">
             <objects>
-                <viewController id="WDS-fw-NBB" customClass="VmContactsViewController" customModule="VM_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WDS-fw-NBB" customClass="VmContactsViewController" customModule="VMContacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s1f-kX-eK0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zjo-x5-AJB">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmPeopleTableViewCell" rowHeight="92" id="reR-IG-9ja" customClass="VmContatcTableViewCell" customModule="VM_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="92"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmPeopleTableViewCell" rowHeight="92" id="reR-IG-9ja" customClass="VmContatcTableViewCell" customModule="VMContacts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="reR-IG-9ja" id="z5H-Cw-G9k">
-                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="92"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383.5" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQt-Cf-Hcu">
-                                                    <rect key="frame" x="95" y="21" width="302.5" height="50"/>
+                                                    <rect key="frame" x="95" y="21" width="300.5" height="50"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -72,41 +72,94 @@
                                 <connections>
                                     <outlet property="dataSource" destination="WDS-fw-NBB" id="P9P-5E-1wK"/>
                                     <outlet property="delegate" destination="WDS-fw-NBB" id="VZa-a5-4ZL"/>
+                                    <outlet property="prefetchDataSource" destination="WDS-fw-NBB" id="wdQ-lm-lvk"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search Contacts" translatesAutoresizingMaskIntoConstraints="NO" id="1GV-GR-p7F">
+                                <rect key="frame" x="0.0" y="48" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WDS-fw-NBB" id="FmO-UU-cjG"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8KL-78-7Mi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Zjo-x5-AJB" firstAttribute="trailing" secondItem="8KL-78-7Mi" secondAttribute="trailing" id="2E8-Ja-rf0"/>
-                            <constraint firstItem="Zjo-x5-AJB" firstAttribute="top" secondItem="8KL-78-7Mi" secondAttribute="top" id="JP4-zo-4b6"/>
+                            <constraint firstItem="1GV-GR-p7F" firstAttribute="trailing" secondItem="8KL-78-7Mi" secondAttribute="trailing" id="5hK-Lf-czj"/>
                             <constraint firstItem="Zjo-x5-AJB" firstAttribute="leading" secondItem="8KL-78-7Mi" secondAttribute="leading" id="OB1-ul-Kov"/>
+                            <constraint firstItem="1GV-GR-p7F" firstAttribute="leading" secondItem="8KL-78-7Mi" secondAttribute="leading" id="Uga-c3-xlp"/>
+                            <constraint firstItem="1GV-GR-p7F" firstAttribute="top" secondItem="8KL-78-7Mi" secondAttribute="top" id="YNP-fg-nmT"/>
                             <constraint firstItem="8KL-78-7Mi" firstAttribute="bottom" secondItem="Zjo-x5-AJB" secondAttribute="bottom" id="jFF-zM-nLh"/>
+                            <constraint firstItem="Zjo-x5-AJB" firstAttribute="top" secondItem="1GV-GR-p7F" secondAttribute="bottom" id="jf4-Ud-0Zs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bgq-f4-kgN"/>
                     <connections>
+                        <outlet property="searchBar" destination="1GV-GR-p7F" id="glZ-vt-Tqm"/>
+                        <outlet property="searchDisplayController" destination="ANm-It-jBr" id="0VY-ch-ODu"/>
                         <outlet property="tableView" destination="Zjo-x5-AJB" id="prb-hJ-3hx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hw-aG-a2g" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="dMb-iJ-8KU">
+                    <connections>
+                        <outlet property="delegate" destination="WDS-fw-NBB" id="6wY-2B-hUk"/>
+                        <outlet property="searchContentsController" destination="WDS-fw-NBB" id="DXa-nj-3NA"/>
+                        <outlet property="searchResultsDataSource" destination="WDS-fw-NBB" id="XPm-ad-BR8"/>
+                        <outlet property="searchResultsDelegate" destination="WDS-fw-NBB" id="vam-3z-YDk"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="4nW-3W-sNb">
+                    <connections>
+                        <outlet property="delegate" destination="WDS-fw-NBB" id="ybg-4C-2E8"/>
+                        <outlet property="searchContentsController" destination="WDS-fw-NBB" id="A3G-tM-6gI"/>
+                        <outlet property="searchResultsDataSource" destination="WDS-fw-NBB" id="EEd-0o-Wda"/>
+                        <outlet property="searchResultsDelegate" destination="WDS-fw-NBB" id="qmn-cs-Md3"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="axc-Ba-Zuw">
+                    <connections>
+                        <outlet property="delegate" destination="WDS-fw-NBB" id="HH4-yj-vTm"/>
+                        <outlet property="searchContentsController" destination="WDS-fw-NBB" id="h28-qV-Ua4"/>
+                        <outlet property="searchResultsDataSource" destination="WDS-fw-NBB" id="Ba8-BX-qMh"/>
+                        <outlet property="searchResultsDelegate" destination="WDS-fw-NBB" id="4pF-1N-WsU"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="8xs-cy-QzT">
+                    <connections>
+                        <outlet property="delegate" destination="WDS-fw-NBB" id="vTJ-9N-F8p"/>
+                        <outlet property="searchContentsController" destination="WDS-fw-NBB" id="Ohn-RA-NlP"/>
+                        <outlet property="searchResultsDataSource" destination="WDS-fw-NBB" id="ZN7-t7-PfQ"/>
+                        <outlet property="searchResultsDelegate" destination="WDS-fw-NBB" id="TED-ba-7Qj"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ANm-It-jBr">
+                    <connections>
+                        <outlet property="delegate" destination="WDS-fw-NBB" id="WwD-4Q-cH1"/>
+                        <outlet property="searchContentsController" destination="WDS-fw-NBB" id="Z0b-yy-utg"/>
+                        <outlet property="searchResultsDataSource" destination="WDS-fw-NBB" id="KbO-yk-Pf7"/>
+                        <outlet property="searchResultsDelegate" destination="WDS-fw-NBB" id="EbW-iW-GJj"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2284.057971014493" y="91.741071428571431"/>
         </scene>
         <!--Vm Contact Details View Controller-->
         <scene sceneID="O8g-FF-61O">
             <objects>
-                <viewController storyboardIdentifier="VmContactDetailsViewController" id="Jws-pZ-Iyl" customClass="VmContactDetailsViewController" customModule="VM_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VmContactDetailsViewController" id="Jws-pZ-Iyl" customClass="VmContactDetailsViewController" customModule="VMContacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hGK-74-ryC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jhh-jA-5Kf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmContactImageTableviewCell" rowHeight="199" id="fQN-CA-7gh" customClass="VmContactImageTableviewCell" customModule="VM_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="199"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmContactImageTableviewCell" rowHeight="199" id="fQN-CA-7gh" customClass="VmContactImageTableviewCell" customModule="VMContacts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="199"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fQN-CA-7gh" id="3yf-xG-YK0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
@@ -147,8 +200,8 @@
                                             <outlet property="nameLabel" destination="zK2-J2-Axb" id="wNr-70-Ifd"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmContactLabelTableViewCell" rowHeight="64" id="ixD-TY-gKK" customClass="VmContactLabelTableViewCell" customModule="VM_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="243.5" width="414" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VmContactLabelTableViewCell" rowHeight="64" id="ixD-TY-gKK" customClass="VmContactLabelTableViewCell" customModule="VMContacts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="249" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ixD-TY-gKK" id="Hbe-5d-yXc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>

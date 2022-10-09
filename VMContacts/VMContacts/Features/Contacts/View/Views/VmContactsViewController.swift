@@ -9,6 +9,7 @@ import UIKit
 
 class VmContactsViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     private var activityView: UIActivityIndicatorView?
@@ -90,5 +91,24 @@ extension VmContactsViewController: UITableViewDataSource, UITableViewDelegate{
             )
             self.navigationController?.pushViewController(viewController, animated: true)
         }
+    }
+}
+
+//extension VmContactsViewController: UITableViewDataSourcePrefetching{
+//
+//    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+//
+//        //fucture, can impliment pagination in future with large datasets
+//    }
+//
+//    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+//
+//    }
+//
+//}
+
+extension VmContactsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel?.searchContacts(str: searchText)
     }
 }

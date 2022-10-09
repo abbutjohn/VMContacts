@@ -19,6 +19,11 @@ class VmRoomsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Occupied",
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(addTapped))
+
         self.bindViewModel()
         self.title = "Rooms"
         self.showActivityIndicator()
@@ -52,6 +57,14 @@ class VmRoomsViewController: UIViewController {
             activityView?.stopAnimating()
         }
     }
+    
+    @objc func addTapped(){
+        
+        self.viewModel?.filterOccupied(filter: !viewModel!.filterStatus )
+        self.viewModel!.filterStatus  = !viewModel!.filterStatus
+
+    }
+    
 }
 //MARK: TableViewcontroller
 

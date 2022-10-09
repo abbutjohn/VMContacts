@@ -16,13 +16,14 @@ class VmContactsViewModel {
             self.loadData()
         }
     }
+    private var allContatcs: [VmContact] = []
     var loadData : (() -> ()) = {}
     var hideActivityIndicator : (() -> ()) = {}
     
     private var apiService : UsersProtocol
 
     
-    init(apiService : UsersProtocol =  UsersController()) {
+    init(apiService : UsersProtocol =  ContactsLoader()) {
         self.apiService =  apiService
         self.callFuncToGetBooksData()
     }
@@ -34,12 +35,25 @@ class VmContactsViewModel {
             
             switch result {
             case .success(let resultValue):
-                self.contatcs = resultValue
+                self.allContatcs = resultValue
                 self.hideActivityIndicator()
+                self.searchContacts(str: "")
             case .failure(let error):
                 print(error.localizedDescription)
                 self.hideActivityIndicator()
             }
+        }
+    }
+    
+    func searchContacts(str : String) {
+        
+        if str.isEmpty {
+            
+            self.contatcs = self.allContatcs
+        }
+        else{
+            
+            self.contatcs = allContatcs.filter { $0.firstName.range(of:str) != nil }
         }
     }
     
