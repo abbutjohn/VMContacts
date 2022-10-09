@@ -10,19 +10,7 @@ import UIKit
 
 class VmContactDetailsViewController: UIViewController {
     
-    var viewModel : VmContactDetailsViewModel
-    
-    
-    init?(viewModel: VmContactDetailsViewModel, coder: NSCoder) {
-        self.viewModel = viewModel
-        super.init(coder: coder)
-    }
-    
-    @available(*, unavailable, renamed: "init(viewModel:coder:)")
-    required init?(coder: NSCoder) {
-        fatalError("Invalid way of decoding this class")
-    }
-    
+    var viewModel : VmContactDetailsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

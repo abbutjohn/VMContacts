@@ -16,6 +16,7 @@ class VmContactsViewModel {
             self.loadData()
         }
     }
+    var selectedIndex: Int = 0
     private var allContatcs: [VmContact] = []
     var loadData : (() -> ()) = {}
     var hideActivityIndicator : (() -> ()) = {}

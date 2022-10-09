@@ -14,17 +14,17 @@ class VmContactsViewController: UIViewController {
     
     private var activityView    : UIActivityIndicatorView?
     private var viewModel       : VmContactsViewModel?
-
-
+    
+    
     //MARK: LifeCycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Contacts"
         self.bindViewModel()
         self.showActivityIndicator()
     }
-
+    
     //MARK: Binding with ViewModel
     
     func bindViewModel(){
@@ -38,7 +38,7 @@ class VmContactsViewController: UIViewController {
     }
     
     //MARK: Funtions
-
+    
     func showActivityIndicator() {
         
         activityView            = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
@@ -53,11 +53,18 @@ class VmContactsViewController: UIViewController {
             activityView?.stopAnimating()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let details = self.viewModel?.contatcs[viewModel!.selectedIndex] {
+            guard let myViewController = segue.destination as? VmContactDetailsViewController else { return }
+            myViewController.viewModel = VmContactDetailsViewModel(contact: details)
+        }
+    }
 }
 
 //MARK: TableViewcontroller
 
-@available(iOS 13.0, *)
 extension VmContactsViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,32 +87,14 @@ extension VmContactsViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if (self.viewModel?.contatcs[indexPath.row]) != nil {
             
-        if let details = self.viewModel?.contatcs[indexPath.row] {
-            
-            let viewController = UIStoryboard(name: "Contacts", bundle: nil).instantiateViewController(
-                identifier: "VmContactDetailsViewController",
-                creator: { coder in
-                    VmContactDetailsViewController(viewModel: VmContactDetailsViewModel(contact: details), coder: coder)
-                }
-            )
-            self.navigationController?.pushViewController(viewController, animated: true)
+            viewModel?.selectedIndex = indexPath.row
+            self.performSegue (withIdentifier: "ShowDetail", sender: self)
+
         }
     }
 }
-
-//extension VmContactsViewController: UITableViewDataSourcePrefetching{
-//
-//    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-//
-//        //fucture, can impliment pagination in future with large datasets
-//    }
-//
-//    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
-//
-//    }
-//
-//}
 
 extension VmContactsViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

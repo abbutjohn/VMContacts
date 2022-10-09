@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDS-fw-NBB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WY8-pO-yd6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -72,7 +72,6 @@
                                 <connections>
                                     <outlet property="dataSource" destination="WDS-fw-NBB" id="P9P-5E-1wK"/>
                                     <outlet property="delegate" destination="WDS-fw-NBB" id="VZa-a5-4ZL"/>
-                                    <outlet property="prefetchDataSource" destination="WDS-fw-NBB" id="wdQ-lm-lvk"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search Contacts" translatesAutoresizingMaskIntoConstraints="NO" id="1GV-GR-p7F">
@@ -100,6 +99,7 @@
                         <outlet property="searchBar" destination="1GV-GR-p7F" id="glZ-vt-Tqm"/>
                         <outlet property="searchDisplayController" destination="ANm-It-jBr" id="0VY-ch-ODu"/>
                         <outlet property="tableView" destination="Zjo-x5-AJB" id="prb-hJ-3hx"/>
+                        <segue destination="Jws-pZ-Iyl" kind="push" identifier="ShowDetail" id="o1z-mu-vrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hw-aG-a2g" sceneMemberID="firstResponder"/>
@@ -144,7 +144,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2284.057971014493" y="91.741071428571431"/>
+            <point key="canvasLocation" x="3194.202898550725" y="91.741071428571431"/>
         </scene>
         <!--Vm Contact Details View Controller-->
         <scene sceneID="O8g-FF-61O">
@@ -255,13 +255,31 @@
                             <constraint firstItem="Jhh-jA-5Kf" firstAttribute="trailing" secondItem="OgF-R3-pGW" secondAttribute="trailing" id="rEr-AB-v9S"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FuQ-lR-Znh"/>
                     <connections>
                         <outlet property="tableView" destination="Jhh-jA-5Kf" id="mMa-F6-bOw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ud-lw-ZpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3263.7681159420295" y="85.714285714285708"/>
+            <point key="canvasLocation" x="4414" y="92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6VZ-9p-TNj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WY8-pO-yd6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gTC-VZ-3CX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WDS-fw-NBB" kind="relationship" relationship="rootViewController" id="de7-Km-MYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQ6-IA-ra4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2284.057971014493" y="91.741071428571431"/>
         </scene>
     </scenes>
     <resources>
