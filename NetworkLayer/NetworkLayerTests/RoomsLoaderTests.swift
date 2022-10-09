@@ -1,17 +1,15 @@
 //
-//  VmContatcsTests.swift
+//  VmRoomsTests.swift
 //  VM_appTests
 //
 //  Created by Abbut John on 08/10/2022.
 //
 
 import XCTest
-@testable import VMContacts
 @testable import NetworkLayer
 
+class RoomsLoaderTests: XCTestCase {
 
-class VmContatcsTests: XCTestCase {
-    
     override func setUp(){
         super.setUp()
     }
@@ -19,12 +17,13 @@ class VmContatcsTests: XCTestCase {
         super.tearDown()
     }
 
-    func testCallFuncToGetValidCharectersData() {
+
+    func testCallFuncToGotRooms() {
         
-        let data = ContactsLoader()
-        let expectations = self.expectation(description: "GotContact")
+        let networkService = MockNetworkService.shared
+        let expectations = self.expectation(description: "GotRooms")
         
-        data.getUsers() { (result: Result<[VmContact], Error>) in
+        networkService.getRooms() { (result: Result<[TestVmRoom], Error>) in
             // ASSERT
             switch result {
             case .success(let result):
@@ -36,5 +35,14 @@ class VmContatcsTests: XCTestCase {
         }
         waitForExpectations(timeout: 0.6, handler: nil)
     }
+
+}
+
+struct TestVmRoom: Codable{
     
+    let createdAt: String
+    let isOccupied: Bool
+    let maxOccupancy: Double
+    let id: String
+
 }

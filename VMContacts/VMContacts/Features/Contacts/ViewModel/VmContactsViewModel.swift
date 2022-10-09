@@ -25,11 +25,11 @@ class VmContactsViewModel {
     
     init(apiService : UsersProtocol =  ContactsLoader()) {
         self.apiService =  apiService
-        self.callFuncToGetBooksData()
+        self.callFuncToGetData()
     }
     
   
-    func callFuncToGetBooksData() {
+    func callFuncToGetData() {
         
         self.apiService.getUsers { (result: Result<[VmContact], Error>) in
             

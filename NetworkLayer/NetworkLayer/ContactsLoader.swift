@@ -10,7 +10,7 @@ import Foundation
 
 public protocol UsersProtocol {
     
-    func getUsers<T>(_ completion: @escaping (Result<[T], Error>) -> Void) where T : Decodable, T : Encodable
+    func getUsers<T : Codable>(_ completion: @escaping (Result<[T], Error>) -> Void)
 }
 
 public class ContactsLoader: UsersProtocol {
@@ -23,7 +23,7 @@ public class ContactsLoader: UsersProtocol {
     }
     
     
-    public func getUsers<T>(_ completion: @escaping (Result<[T], Error>) -> Void) where T : Decodable, T : Encodable {
+    public func getUsers<T : Codable>(_ completion: @escaping (Result<[T], Error>) -> Void) {
         
         
         networkService.request(router: NetworkRouter.getContatcs) { (result: Result<[T], Error>) in

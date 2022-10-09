@@ -29,12 +29,15 @@
 		F1C091FE28F1967A00E95B24 /* VmContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */; };
 		F1C091FF28F1967A00E95B24 /* VmContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */; };
 		F1C0920128F196BE00E95B24 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0920028F196BE00E95B24 /* Extentions.swift */; };
-		F1C0921528F1A35F00E95B24 /* VmRoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */; };
-		F1C0921628F1A35F00E95B24 /* VmContatcsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */; };
+		F1C0922728F2F20D00E95B24 /* VmAvailableRoomViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0922628F2F20D00E95B24 /* VmAvailableRoomViewModelTests.swift */; };
+		F1C0922E28F2F33D00E95B24 /* VmContactsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0922D28F2F33D00E95B24 /* VmContactsViewModelTest.swift */; };
+		F1C0923028F2F37300E95B24 /* VMContactDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0922F28F2F37300E95B24 /* VMContactDetailsViewModelTest.swift */; };
+		F1C0923328F2F91700E95B24 /* MockRoomsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0923228F2F91700E95B24 /* MockRoomsLoader.swift */; };
+		F1C0923528F2F97A00E95B24 /* MockContactsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0923428F2F97A00E95B24 /* MockContactsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1C0920E28F1A34200E95B24 /* PBXContainerItemProxy */ = {
+		F1C0922828F2F20D00E95B24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F1C0917C28F0E12500E95B24 /* Project object */;
 			proxyType = 1;
@@ -81,9 +84,12 @@
 		F1C091F928F1967A00E95B24 /* VmContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactsViewController.swift; sourceTree = "<group>"; };
 		F1C091FA28F1967A00E95B24 /* VmContactDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContactDetailsViewController.swift; sourceTree = "<group>"; };
 		F1C0920028F196BE00E95B24 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
-		F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmRoomsTests.swift; sourceTree = "<group>"; };
-		F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmContatcsTests.swift; sourceTree = "<group>"; };
+		F1C0922428F2F20D00E95B24 /* VMContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C0922628F2F20D00E95B24 /* VmAvailableRoomViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VmAvailableRoomViewModelTests.swift; sourceTree = "<group>"; };
+		F1C0922D28F2F33D00E95B24 /* VmContactsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VmContactsViewModelTest.swift; sourceTree = "<group>"; };
+		F1C0922F28F2F37300E95B24 /* VMContactDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMContactDetailsViewModelTest.swift; sourceTree = "<group>"; };
+		F1C0923228F2F91700E95B24 /* MockRoomsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRoomsLoader.swift; sourceTree = "<group>"; };
+		F1C0923428F2F97A00E95B24 /* MockContactsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContactsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1C0920728F1A34200E95B24 /* Frameworks */ = {
+		F1C0922128F2F20D00E95B24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C0918628F0E12500E95B24 /* VMContacts */,
-				F1C0920B28F1A34200E95B24 /* VMContactsTests */,
+				F1C0922528F2F20D00E95B24 /* VMContactsTests */,
 				F1C0918528F0E12500E95B24 /* Products */,
 				F1C091D928F194E500E95B24 /* Frameworks */,
 			);
@@ -119,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C0918428F0E12500E95B24 /* VMContacts.app */,
-				F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */,
+				F1C0922428F2F20D00E95B24 /* VMContactsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,13 +278,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F1C0920B28F1A34200E95B24 /* VMContactsTests */ = {
+		F1C0922528F2F20D00E95B24 /* VMContactsTests */ = {
 			isa = PBXGroup;
 			children = (
-				F1C0921428F1A35F00E95B24 /* VmContatcsTests.swift */,
-				F1C0921328F1A35F00E95B24 /* VmRoomsTests.swift */,
+				F1C0923128F2F41300E95B24 /* Mocks */,
+				F1C0922628F2F20D00E95B24 /* VmAvailableRoomViewModelTests.swift */,
+				F1C0922D28F2F33D00E95B24 /* VmContactsViewModelTest.swift */,
+				F1C0922F28F2F37300E95B24 /* VMContactDetailsViewModelTest.swift */,
 			);
 			path = VMContactsTests;
+			sourceTree = "<group>";
+		};
+		F1C0923128F2F41300E95B24 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F1C0923228F2F91700E95B24 /* MockRoomsLoader.swift */,
+				F1C0923428F2F97A00E95B24 /* MockContactsLoader.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,22 +319,22 @@
 			productReference = F1C0918428F0E12500E95B24 /* VMContacts.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1C0920928F1A34200E95B24 /* VMContactsTests */ = {
+		F1C0922328F2F20D00E95B24 /* VMContactsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1C0921228F1A34200E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */;
+			buildConfigurationList = F1C0922A28F2F20D00E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */;
 			buildPhases = (
-				F1C0920628F1A34200E95B24 /* Sources */,
-				F1C0920728F1A34200E95B24 /* Frameworks */,
-				F1C0920828F1A34200E95B24 /* Resources */,
+				F1C0922028F2F20D00E95B24 /* Sources */,
+				F1C0922128F2F20D00E95B24 /* Frameworks */,
+				F1C0922228F2F20D00E95B24 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1C0920F28F1A34200E95B24 /* PBXTargetDependency */,
+				F1C0922928F2F20D00E95B24 /* PBXTargetDependency */,
 			);
 			name = VMContactsTests;
 			productName = VMContactsTests;
-			productReference = F1C0920A28F1A34200E95B24 /* VMContactsTests.xctest */;
+			productReference = F1C0922428F2F20D00E95B24 /* VMContactsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +350,7 @@
 					F1C0918328F0E12500E95B24 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
-					F1C0920928F1A34200E95B24 = {
+					F1C0922328F2F20D00E95B24 = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = F1C0918328F0E12500E95B24;
 					};
@@ -353,7 +370,7 @@
 			projectRoot = "";
 			targets = (
 				F1C0918328F0E12500E95B24 /* VMContacts */,
-				F1C0920928F1A34200E95B24 /* VMContactsTests */,
+				F1C0922328F2F20D00E95B24 /* VMContactsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1C0920828F1A34200E95B24 /* Resources */ = {
+		F1C0922228F2F20D00E95B24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,22 +420,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1C0920628F1A34200E95B24 /* Sources */ = {
+		F1C0922028F2F20D00E95B24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C0921528F1A35F00E95B24 /* VmRoomsTests.swift in Sources */,
-				F1C0921628F1A35F00E95B24 /* VmContatcsTests.swift in Sources */,
+				F1C0922E28F2F33D00E95B24 /* VmContactsViewModelTest.swift in Sources */,
+				F1C0923528F2F97A00E95B24 /* MockContactsLoader.swift in Sources */,
+				F1C0923328F2F91700E95B24 /* MockRoomsLoader.swift in Sources */,
+				F1C0922728F2F20D00E95B24 /* VmAvailableRoomViewModelTests.swift in Sources */,
+				F1C0923028F2F37300E95B24 /* VMContactDetailsViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F1C0920F28F1A34200E95B24 /* PBXTargetDependency */ = {
+		F1C0922928F2F20D00E95B24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F1C0918328F0E12500E95B24 /* VMContacts */;
-			targetProxy = F1C0920E28F1A34200E95B24 /* PBXContainerItemProxy */;
+			targetProxy = F1C0922828F2F20D00E95B24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -480,6 +500,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +554,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -599,7 +621,7 @@
 			};
 			name = Release;
 		};
-		F1C0921028F1A34200E95B24 /* Debug */ = {
+		F1C0922B28F2F20D00E95B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,7 +639,7 @@
 			};
 			name = Debug;
 		};
-		F1C0921128F1A34200E95B24 /* Release */ = {
+		F1C0922C28F2F20D00E95B24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,11 +678,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1C0921228F1A34200E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */ = {
+		F1C0922A28F2F20D00E95B24 /* Build configuration list for PBXNativeTarget "VMContactsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1C0921028F1A34200E95B24 /* Debug */,
-				F1C0921128F1A34200E95B24 /* Release */,
+				F1C0922B28F2F20D00E95B24 /* Debug */,
+				F1C0922C28F2F20D00E95B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

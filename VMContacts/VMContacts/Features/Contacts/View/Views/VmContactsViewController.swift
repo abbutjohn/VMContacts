@@ -12,8 +12,8 @@ class VmContactsViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    private var activityView: UIActivityIndicatorView?
-    private var viewModel : VmContactsViewModel?
+    private var activityView    : UIActivityIndicatorView?
+    private var viewModel       : VmContactsViewModel?
 
 
     //MARK: LifeCycle
@@ -110,5 +110,9 @@ extension VmContactsViewController: UITableViewDataSource, UITableViewDelegate{
 extension VmContactsViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         viewModel?.searchContacts(str: searchText)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

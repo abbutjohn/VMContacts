@@ -10,9 +10,9 @@ import Foundation
 
 public protocol RoomsProtocol {
     
-    func getRooms<T>(_ completion: @escaping (Result<[T], Error>) -> Void) where T : Decodable, T : Encodable
+    func getRooms<T : Codable>(_ completion: @escaping (Result<[T], Error>) -> Void)
+    
 }
-
 
 public class RoomsLoader: RoomsProtocol {
     
@@ -23,7 +23,7 @@ public class RoomsLoader: RoomsProtocol {
         networkService = NetworkServices.shared
     }
     
-    public func getRooms<T>(_ completion: @escaping (Result<[T], Error>) -> Void) where T : Decodable, T : Encodable {
+    public func getRooms<T : Codable>(_ completion: @escaping (Result<[T], Error>) -> Void) {
         
         
         networkService.request(router: NetworkRouter.getAvailableRooms) { (result: Result<[T], Error>) in

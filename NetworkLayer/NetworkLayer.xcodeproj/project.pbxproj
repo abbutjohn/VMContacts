@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1AA90CB28F34308000612D8 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA90CA28F34308000612D8 /* MockNetworkService.swift */; };
 		F1C091AA28F0E4B800E95B24 /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = F1C091A928F0E4B800E95B24 /* NetworkLayer.docc */; };
 		F1C091B028F0E4B800E95B24 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C091A528F0E4B800E95B24 /* NetworkLayer.framework */; };
 		F1C091B528F0E4B800E95B24 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091B428F0E4B800E95B24 /* NetworkLayerTests.swift */; };
@@ -15,6 +16,8 @@
 		F1C091CC28F18FAF00E95B24 /* ContactsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */; };
 		F1C091CD28F18FAF00E95B24 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */; };
 		F1C091CE28F18FAF00E95B24 /* RoomsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */; };
+		F1C0921928F2E86100E95B24 /* RoomsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921828F2E86100E95B24 /* RoomsLoaderTests.swift */; };
+		F1C0921A28F2E86100E95B24 /* ContatcsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0921728F2E86100E95B24 /* ContatcsLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1AA90CA28F34308000612D8 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		F1C091A528F0E4B800E95B24 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C091A828F0E4B800E95B24 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		F1C091A928F0E4B800E95B24 /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
@@ -37,6 +41,8 @@
 		F1C091C828F18FAF00E95B24 /* ContactsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsLoader.swift; sourceTree = "<group>"; };
 		F1C091C928F18FAF00E95B24 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		F1C091CA28F18FAF00E95B24 /* RoomsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsLoader.swift; sourceTree = "<group>"; };
+		F1C0921728F2E86100E95B24 /* ContatcsLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatcsLoaderTests.swift; sourceTree = "<group>"; };
+		F1C0921828F2E86100E95B24 /* RoomsLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1AA90C928F342F1000612D8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA90CA28F34308000612D8 /* MockNetworkService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		F1C0919B28F0E4B800E95B24 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +106,9 @@
 		F1C091B328F0E4B800E95B24 /* NetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F1AA90C928F342F1000612D8 /* Mock */,
+				F1C0921728F2E86100E95B24 /* ContatcsLoaderTests.swift */,
+				F1C0921828F2E86100E95B24 /* RoomsLoaderTests.swift */,
 				F1C091B428F0E4B800E95B24 /* NetworkLayerTests.swift */,
 			);
 			path = NetworkLayerTests;
@@ -218,7 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AA90CB28F34308000612D8 /* MockNetworkService.swift in Sources */,
 				F1C091B528F0E4B800E95B24 /* NetworkLayerTests.swift in Sources */,
+				F1C0921928F2E86100E95B24 /* RoomsLoaderTests.swift in Sources */,
+				F1C0921A28F2E86100E95B24 /* ContatcsLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

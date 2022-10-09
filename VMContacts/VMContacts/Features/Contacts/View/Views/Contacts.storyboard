@@ -77,7 +77,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search Contacts" translatesAutoresizingMaskIntoConstraints="NO" id="1GV-GR-p7F">
                                 <rect key="frame" x="0.0" y="48" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="WDS-fw-NBB" id="FmO-UU-cjG"/>
                                 </connections>

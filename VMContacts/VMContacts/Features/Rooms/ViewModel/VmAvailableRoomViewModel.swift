@@ -24,10 +24,10 @@ class VmAvailableRoomViewModel  {
     
     init(apiService : RoomsProtocol =  RoomsLoader()) {
         self.apiService =  apiService
-        self.callFuncToGetBooksData()
+        self.callFuncToGetData()
     }
     
-    func callFuncToGetBooksData() {
+    func callFuncToGetData() {
         
         self.apiService.getRooms { (result: Result<[VmRoom], Error>) in
             switch result {
