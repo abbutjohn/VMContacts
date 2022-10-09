@@ -35,7 +35,7 @@ The code did in swift 5 with help of storyboard
 
 Accessibilty auditing did for the app.
 
-Tha app is visually designed with tabbar with two viewcontroller
+Tha app is visually designed with tabbar with three viewcontroller, contacts, contact details and room.
 
 The contacts view controller shows with tableview and serchbar , when user tap on contact the navigation will take you to Details screen. Prefetching not implimented because the data set is comaparitevly small.
 
@@ -43,6 +43,14 @@ The contacts view controller shows with tableview and serchbar , when user tap o
 The roomViewcontroller shows all the rooms with filter of occupied rooms option in navaiagtion bar.
 
 The app is designed to support ipad as well as iphone
+
+Support folder contains some some common classes.
+
+Protocols used for dependency injection.
+
+singlton pattern used in app for networkservice.
+
+serchbar used in contacts for easily accessising/finding contacts
 
 
 
