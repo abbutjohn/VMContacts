@@ -44,13 +44,13 @@ The roomViewcontroller shows all the rooms with filter of occupied rooms option 
 
 The app is designed to support ipad as well as iphone
 
-Support folder contains some some common classes.
+Support folder contains some some common classes and assets.
 
 Protocols used for dependency injection.
 
 singlton pattern used in app for networkservice.
 
-serchbar used in contacts for easily accessising/finding contacts
+searchbar used in contacts for easily accessising/finding contacts
 
 
 
