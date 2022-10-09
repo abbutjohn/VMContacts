@@ -19,8 +19,40 @@ Solution
 
 System Design
 
-For reusability of the modules , designed the networklayer sepratly as framework. This will help other developers to impliment new api calls in it and test it sepratly and also help to resue the module easily to another project.
-
-For App I choose MVVM archituture and the viewmodels communictaed to Viewcontrollers using clousers. MVVM will help us to test business logic and also give oppertunity to replace the View to SwiftUI in fucture.
 
 <img width="685" alt="Screenshot 2022-10-08 at 13 13 37" src="https://user-images.githubusercontent.com/83579629/194706987-eafd7723-5c76-4609-bd8c-e18f2398830a.png">
+
+
+For reusability of the modules , designed the networklayer sepratly as framework. This will help other developers to impliment new api calls in it and test it sepratly and also help to resue the module easily to another project. Rooms and Contacts also indepdently designed to reuse in future
+
+For App , selected MVVM archituture and the viewmodels communictaed to Viewcontrollers using clousers. MVVM will help us to test business logic and also give oppertunity to replace the View to SwiftUI in fucture.
+
+UnitTest added for all methods in the Viewmodels with the help of mock services.
+
+The brnding colour added to UIcolour extentions and in future we can add more colours to this and use in the app.
+
+The code did in swift 5 with help of storyboard
+
+Accessibilty auditing did for the app.
+
+Tha app is visually designed with tabbar with two viewcontroller
+
+The contacts view controller shows with tableview and serchbar , when user tap on contact the navigation will take you to Details screen. Prefetching not implimented because the data set is comaparitevly small.
+
+
+The roomViewcontroller shows all the rooms with filter of occupied rooms option in navaiagtion bar.
+
+The app is designed to support ipad as well as iphone
+
+
+
+
+
+
+
+
+
+
+
+
+ 
